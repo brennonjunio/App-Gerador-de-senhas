@@ -29,7 +29,7 @@ export default function App() {
     <View style={styles.container}>
       <Image
         style={styles.logo}
-        source={require("../novoapp/src/shared/logo.png")}
+        source={require("./src/shared/logo.png")}
       />
       <Text style={styles.title}>{size} caracteres</Text>
       <View style={styles.area}>
