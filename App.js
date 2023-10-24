@@ -22,9 +22,9 @@ export default function App() {
       password += charset.charAt(Math.floor(Math.random() * n));
     }
     setPass(password);
-    console.log(password);
     setOpenMOdal(true);
   }
+
   return (
     <View style={styles.container}>
       <Image
