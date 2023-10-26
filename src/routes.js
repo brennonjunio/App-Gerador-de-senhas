@@ -1,3 +1,42 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {Home} from './pages/home/index'
-import {Pass} from './pages/passwords/index'
+import { Home } from "./pages/home";
+import { Passwords } from "./pages/passwords";
+import { Feather,Ionicons} from '@expo/vector-icons'; 
+
+const Tab = createBottomTabNavigator();
+
+export function Routes() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen
+        name="home"
+        component={Home}
+        options={{
+            tabBarShowLabel: false,
+          headerShown: false,
+          tabBarIcon: ({focused, size, color}) => {
+            if (focused) {
+              return <Ionicons size={size} color={color} name="home" />;
+            }
+            return <Ionicons size={size} color={color} name="home-outline" />;
+          },
+        }}
+      />
+
+      <Tab.Screen
+        name="passwords"
+        component={Passwords}
+        options={{
+            tabBarShowLabel: false,
+            headerShown: false,
+            tabBarIcon: ({focused, size, color}) => {
+              if (focused) {
+                return <Feather size={size} color={color} name="lock" />;
+              }
+              return <Feather size={size} color={color} name="unlock" />;
+            },
+          }}
+      />
+    </Tab.Navigator>
+  );
+}
