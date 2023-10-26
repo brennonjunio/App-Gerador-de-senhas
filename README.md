@@ -1,5 +1,5 @@
 # App-Gerador-de-senhas
-App Android feito com React-Native para gerar senhas
+App Android feito com React-Native para gerar senhas, com funcionalidades de Listar, Salvar, Deletar as senhas do Storage.
 
 
 
