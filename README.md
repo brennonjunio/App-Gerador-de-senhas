@@ -1,5 +1,8 @@
 # App-Gerador-de-senhas
 App Android feito com React-Native para gerar senhas
+
+
+
 ![image](https://github.com/brennonjunio/App-Gerador-de-senhas/assets/121310442/3e31bdcc-2cd5-427c-a14e-22eb9774a775)
 
 ![image](https://github.com/brennonjunio/App-Gerador-de-senhas/assets/121310442/197969ac-8382-4197-a6c5-a3f85b3bc636)
